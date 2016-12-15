@@ -36,7 +36,6 @@ def printMovieInfo(url):
         print('\tPage not found')
 
 
-
 if __name__ == '__main__':
     top250Movies = getMoviesOfTop250()
     for m in top250Movies:
