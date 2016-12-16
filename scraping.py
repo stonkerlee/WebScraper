@@ -30,7 +30,7 @@ def printMovieInfo(url):
     try:
         html = urllib2.urlopen(url)
         bsObj = BeautifulSoup(html.read(), 'html.parser')
-        title = bsObj.find('title').get_text().rstrip().lstrip()
+        title = bsObj.find('title').get_text().strip()
         print('\t' + title)
     except:
         print('\tPage not found')
